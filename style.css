@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(fotos/fundo_1.png);
+    background-size: 70px;
+    background-color: black;
+}
+
+.cabesario {
+    background-image: linear-gradient(#362c2ca8, #6b5453d0);
+    height: 14vh;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.cabesario h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+/*    color: #D9A13B;*/
+    color: gold;
+    padding: 10px;
+    text-shadow: 3px 3px 10px #4e95e7c2;
+}
+.bi bi-list{
+    text-decoration: none;
+    color: aliceblue;
+}
+.principal {
+    height: 85vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.rodape {
+    background-color: darkblue;
+    height: 100px
+}
+
+iframe {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+
+    background-image: url(fotos/fundo_4.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+ul {
+    list-style-type: none;
+}
+.house{
+    margin: 15px;
+}
+
+/* Botão suspenso */
+.dropbtn {
+    margin: auto;
+    border-radius: 25%;
+    background-color: gold;
+/*    background-image: radial-gradient(#E67832, #F09935, #E6CB32);*/
+    color: white;
+    padding: 16px;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Botão suspenso ao passar o mouse e focar */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: darkblue;
+/*    color: gold;*/
+}
+
+/* O contêiner <div> - necessário para posicionar o conteúdo suspenso */
+.dropdown {
+/*    position: relative;*/
+    display: inline-flex;
+    margin: 10px;    
+}
+
+/* Conteúdo suspenso (oculto por padrão) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D9A13B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/* Links dentro do menu suspenso */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Alterar a cor dos links suspensos ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 255, 0.75);
+    color: gold;
+}
+
+/* Mostre o menu suspenso (use JS para adicionar esta classe ao contêiner .dropdown-content quando o usuário clicar no botão suspenso) */
+.show {
+    display: block;
+/*display menores*/
+    @media only screen and (min-width: 800px){
+        .cabesario h1{
+            font-size: 20px;
+        }
+    }
+}
